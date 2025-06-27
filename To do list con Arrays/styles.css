@@ -1,0 +1,210 @@
+
+*{
+    padding: 0;
+    margin: o;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+
+body{
+
+    background-image: url("recursos/Aura background.jpeg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+header{
+color: white;
+margin-top: 20px;
+background-color: rgba(209, 193, 193, 0.5);
+backdrop-filter: blur(100px);
+display: flex;
+justify-content: start;
+align-items: center;
+height: 70px;
+width: 600px;
+border-radius: 20px;
+padding-left: 20px;
+gap: 40px;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: -100px;
+    top: 20px;
+    height: 30px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.opciones-despliegue{
+    height: 180px;
+}
+
+.opt-menu{
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    place-content: center;
+}
+
+header .fechaHora{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .fechaHora :nth-child(1){
+    font-size: 25px;
+}
+
+.busqueda{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    gap: 5px;
+    border-radius: 20px;
+    width: 270px;
+}
+
+.busqueda button, .busqueda input{
+    background-color: transparent;
+    border: none;
+}
+
+.busqueda input{
+    width: 240px;
+    font-size: 15px;
+}
+
+.busqueda input:focus{
+    outline: none;
+}
+
+main{
+    background-color: rgba(209, 193, 193, 0.5);
+    backdrop-filter: blur(100px);
+    padding: 20px;
+    border-radius: 20px;
+    width: 580px;
+    color: white;
+    height: 400px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    height: 270px;
+    overflow: scroll;
+}
+
+section ol{
+    margin-left: 20px;
+}
+
+ol{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    gap: 10px;
+    font-size: 15px;
+}
+
+ol li div{
+    word-break: break-word;
+}
+
+main .agregarTareas{
+    width: 95%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.agregarTareas button, .agregarTareas input{
+    border: none;
+    background-color: transparent;
+}
+
+.agregarTareas input{
+    width: 95%;
+    font-size: 17px;
+}
+
+.agregarTareas input:focus{
+    outline: none;
+}
+
+.tareas ol{
+margin-left: 23px;
+}
+
+.tareas ol span{
+    position: relative;
+    right: 22px;
+}
+
+.tachado{
+    color: gray;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+  background-color: white;
+  background: url(recursos/heart.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+input[type="checkbox"]:checked {
+  background: rgb(211, 178, 184, 0.5);
+  background-image: url(recursos/heart-fill.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+li div{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 4px;
+    background-color: rgb(211, 178, 184, 0.3);
+    border-radius: 10px;
+    gap: 5px;
+    min-width: 100%;
+}
+
+li div button{
+    position: absolute;
+    right: 0px;
+    background: none;
+    border: none;
+    margin-right: 10px;
+}
